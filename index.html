@@ -46,7 +46,7 @@
       const u = document.getElementById("user").value;
       const p = document.getElementById("pass").value;
 
-      if (u === "admin" && p === "1234") {
+      if (u !== "" && p !== "") {
         window.location.href = "company.html";
       } else {
         document.getElementById("msg").innerText = "Wrong login!";
